@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Survey_State__c</fullName>
+        <externalId>false</externalId>
+        <label>Survey State</label>
+        <required>true</required>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Question_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>Question Count</label>
+        <required>true</required>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Rated_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>Rated Count</label>
+        <required>true</required>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Questions__c</fullName>
+        <externalId>false</externalId>
+        <label>Questions</label>
+        <required>true</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Rating_Min__c</fullName>
+        <externalId>false</externalId>
+        <label>Rating Min</label>
+        <required>true</required>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Rating_Max__c</fullName>
+        <externalId>false</externalId>
+        <label>Rating Max</label>
+        <required>true</required>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Users__c</fullName>
+        <externalId>false</externalId>
+        <label>Users</label>
+        <required>true</required>
+        <type>TextArea</type>
+    </fields>
+</CustomObject>
