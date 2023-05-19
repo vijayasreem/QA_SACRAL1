@@ -1,24 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
-  <fields>
-    <fullName>Name</fullName>
-    <externalId>false</externalId>
-    <label>Wholesaler Name</label>
-    <required>true</required>
-    <type>Text</type>
-  </fields>
-  <fields>
-    <fullName>Number</fullName>
-    <externalId>false</externalId>
-    <label>Wholesaler Number</label>
-    <required>true</required>
-    <type>Number</type>
-  </fields>
-  <fields>
-    <fullName>Type</fullName>
-    <externalId>false</externalId>
-    <label>Wholesaler Type</label>
-    <required>true</required>
-    <type>Picklist</type>
-  </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <externalId>false</externalId>
+        <label>Name</label>
+        <required>true</required>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Number</label>
+        <required>true</required>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>true</required>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Date_Created__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Created</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Last_Modified__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Modified</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
 </CustomObject>
