@@ -1,0 +1,45 @@
+·       Ability to access the sub screens like edit, view and download.     ·       User should be able to view the results in Excel format.     ·       User should be able to filter the data using the drop down menu.     ·       User should be able to add or edit the wholesaler.     ·       User name should not be empty and should be unique.     ·       Number should not be empty and should be number "/^\d+$/" and should be unique.     ·       User should be able to access the sub functionalities like edit, view and download.     ·       If user has access then user able to access this page.     ·       If user didn’t have access then redirect to login page.
+<trigger> 
+  <event>
+    <name>wholesalers</name>
+    <description>This Menu Item is used to get ‘wholesalers’ list and do the operations on Edit, View and Download.</description>
+    <conditions>
+      <condition name="Name" description="Name should not be Empty">
+        <validation type="unique" message="WHOLESALER NAME BLANK" />
+        <validation type="duplicate" message="WHOLESALER DUPLICATE NAME" />
+      </condition>
+      <condition name="Number" description="Should not be empty and should be number '/^\d+$/' and should be unique">
+        <validation type="unique" message="WHOLESALER INVALID NUMBER" />
+        <validation type="null" message="WHOLESALER NULL NUMBER" />
+        <validation type="duplicate" message="WHOLESALER DUPLICATE NUMBER" />
+      </condition>
+      <condition name="Type" description="Either I- Independent or M- Multiple" />
+      <condition name="ContactName" description="Contact person name" />
+      <condition name="EmailAddress" description="Contact Person Email Address" />
+      <condition name="Active" description="Default is False" />
+      <condition name="DateCreated" description="Creation date" />
+      <condition name="LastModified" description="Last modified date" />
+    </conditions>
+  </event>
+  <action>
+    <description>Ability to access the Wholesalers functionality. Ability to access the sub screens like edit, view and download. Ability to download the branches as format of .csv file User able to find the sub functionalities when he clicks user’s functionality. User able to access the sub functionalities like edit, view and download. If user has access then user able to access this page. If user didn’t have access then redirect to login page.</description>
+    <subaction type="click">
+      <description>User have the option of filtering the data using the drop down menu.Type - This drop down menu will allowing User to select the type User wish to add/edit. The Submit and Reset buttons are given on this screen. Once User have made User selections click on Submit it will add/edit the wholesaler, or click on Reset to reset the selections to the last search.</description>
+    </subaction>
+    <subaction type="download">
+      <description>Clicking on Download Data will allow User to view the results in Excel format.</description>
+    </subaction>
+  </action>
+  <acceptanceCriteria>
+    <criteria>Ability to click the functionalities displayed on page.</criteria>
+    <criteria>Ability to access the sub screens like edit, view and download.</criteria>
+    <criteria>User should be able to view the results in Excel format.</criteria>
+    <criteria>User should be able to filter the data using the drop down menu.</criteria>
+    <criteria>User should be able to add or edit the wholesaler.</criteria>
+    <criteria>User name should not be empty and should be unique.</criteria>
+    <criteria>Number should not be empty and should be number "/^\d+$/" and should be unique.</criteria>
+    <criteria>User should be able to access the sub functionalities like edit, view and download.</criteria>
+    <criteria>If user has access then user able to access this page.</criteria>
+    <criteria>If user didn’t have access then redirect to login page.</criteria>
+  </acceptanceCriteria>
+</trigger>
