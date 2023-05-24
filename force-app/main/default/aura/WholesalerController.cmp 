@@ -1,0 +1,8 @@
+<aura:component controller="loadWholesalerById_WholesalerController" implements="force:appHostable">
+    <aura:attribute name="wholesalerDto" type="Object"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+	
+    <aura:method name="getWholesalerById" action="{!c.getWholesalerById}">
+        <aura:attribute name="wholesalerId" type="Integer" required="true"/>
+    </aura:method> 
+</aura:component>

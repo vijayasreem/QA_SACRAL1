@@ -5,7 +5,7 @@
       "default": true
     }
   ],
-  "name": "STPN-179",
+  "name": "STPN-177",
   "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
   "sourceApiVersion": "57.0"

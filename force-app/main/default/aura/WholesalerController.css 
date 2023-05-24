@@ -1,0 +1,38 @@
+/*Generated CSS file for Aura Component for LoadWholesalerById_WholesalerController 7_managementService*/
+
+.wholesaler-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.wholesaler-container:hover {
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.wholesaler-container > h4 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.wholesaler-container > p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.wholesaler-container > small {
+    font-size: 0.8rem;
+    font-weight: 300;
+    opacity: 0.5;
+    margin: 10px 0;
+}

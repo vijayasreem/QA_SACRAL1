@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AuraDefinitionBundle>
+    <apiVersion>46</apiVersion>
+    <description>Aura Component for Load Wholesaler By Id</description>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__AppPage</target>
+        <target>lightning__RecordPage</target>
+        <target>lightning__HomePage</target>
+        <target>lightningCommunity__Page</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__AppPage,lightning__RecordPage,lightning__HomePage,lightningCommunity__Page">
+            <action>
+                <name>loadWholesalerById_WholesalerController 7_managementservice</name>
+                <description>Retrieves the details of a specific wholesaler by providing its ID</description>
+                <type>GET</type>
+                <url>/{id}</url>
+                <params>
+                    <param name="id" type="integer" required="true" description="ID of the desired wholesaler"/>
+                </params>
+                <responseFormat>JSON</responseFormat>
+                <response>
+                    <statusCode code="200">WholesalerDto object with the details of the wholesaler</statusCode>
+                    <statusCode code="404">Error message indicating that the wholesaler was not found</statusCode>
+                </response>
+            </action>
+        </targetConfig>
+    </targetConfigs>
+</AuraDefinitionBundle>
